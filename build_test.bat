@@ -15,5 +15,5 @@ java -version
 javac -version
 
 rem mvn clean install -Dmaven.test.skip=true
-mvn clean install
-rem mvn test
+call mvn clean install
+call mvn test

@@ -6,8 +6,10 @@
 package com.imos.model;
 
 import java.time.LocalDate;
+import javax.persistence.Cacheable;
 import javax.persistence.Entity;
 import javax.persistence.Table;
+import org.hibernate.annotations.CacheConcurrencyStrategy;
 
 /**
  *
@@ -15,6 +17,8 @@ import javax.persistence.Table;
  */
 @Entity
 @Table
+@Cacheable
+@org.hibernate.annotations.Cache(usage = CacheConcurrencyStrategy.READ_WRITE)
 public class Person extends BaseData {
     
     private String name;
