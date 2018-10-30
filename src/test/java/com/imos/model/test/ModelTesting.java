@@ -2,7 +2,6 @@ package com.imos.model.test;
 
 
 import com.imos.model.Person;
-import java.time.LocalDate;
 import org.junit.jupiter.api.Assertions;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import org.junit.jupiter.api.Test;
